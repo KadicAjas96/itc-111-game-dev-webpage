@@ -1,148 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Jumbotron Template for Bootstrap</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Opportunities</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tools/API's</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Companies & Studios</a>
+  </div>
+</div>
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-  </head>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Opportunities</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tools/API's</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Companies & Studios</a>
+</div>
 
-  <body>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.wallpaperscraft.com/image/playstation_gamepad_crash_22102_1920x1080.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Overview</h3>
+      <p><b>Game developers work on teams to plan, design, and produce video games for computers, mobile devices, or game consoles. 
+            Their work involves creating visual content for the game and writing code to implement all the game’s features and functionality. 
+            This career requires a background in software development and mathematics and the ability to collaborate well with others to 
+            accomplish project goals. While many work full-time hours in game studios or at software companies, opportunities exist for game 
+            developers who prefer to work remotely or to self-publish their games online as independent developers.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.wallpaperscraft.com/image/minecraft_planet_cube_cubes_world_2228_1920x1080.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.wallpaperscraft.com/image/code_letters_screen_137590_1280x720.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+  <!-- The Opportunities Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide w3-center">Opportunities</h2>
+    <p class="w3-opacity w3-center">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4 class="w3-wide w3-center">Education</h4>
+      <p class="w3-opacity w3-center">There are a couple different routes you can take to become a video game developer. The most popular one at the moment is getting 
+                    a Computer Science degree at a university or college, focusing on video game labguages and building projects that are video games or video game related.
+                    Contact your schools counselor to find what programs your school offers. You can view the steps on here <a href="https://study.com/articles/Become_a_Gaming_Programmer_Step-by-Step_Career_Guide.html" target="_blank" style="color: darkblue">step-by-step</a>
+                    and see what steps you need to take to get started on your Computer Science Degree. 
+      </p>
+    </div>
 
-    <main role="main">
+  <!-- The Tools & API's Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOOLS | API's | LANGUAGES</h2><br>
+      <h4 class="w3-wide w3-center">Tools</h4>
+      <p class="w3-opacity w3-center">We’re in the golden age of indie games. Mobile gaming alone made $41 billion in 2016, and indie developers got a hearty piece of 
+                    that pie. Digital distribution, an ever-expanding video game audience and the proliferation of powerful computers can be thanked for the indie 
+                    game industry’s growth. Without the help of affordable engines and frameworks, however, game devs would be unable to meet the growing demand. 
+                    Fortunately, these software tools do exist, and they serve to start the careers of indie dev novices and experts alike.</p>
+                    <p <p class="w3-opacity w3-center">Some of the top tools for the indie game developr are Unreal Engine, Unity, Godot Engine and many more. These tools
+                    will help you make the process a lot easier and have a lot of great functions that are hard to build from scratch. Visit this website 
+                    <a href="https://dzone.com/articles/5-best-video-game-development-tools-for-indie-game" target="_blank" style="color: aquamarine;">Top 5 Video Game Tools</a>
+                    to get more information. We reccomend you dig as much as you can to find the right tool for whatever ideas(s) you have.</p>
+      <h4 class="w3-wide w3-center">API's</h4>
+      <p class="w3-opacity w3-center">The gaming industry has grown tremendously in the recent past. A recent report released by the Entertainment Software Association (ESA)
+                    estimated that 42% of Americans play video games for at least 3 hours every week. Additionally, more than 150 million Americans play online 
+                    and offline video games. Another forecast by PwC suggested that by 2019, the revenue generated from video games would reach $93.18 billion USD. 
+                    In addition, the global social gaming market would reach $22.52 billion USD.</p> 
+                    <p class="w3-opacity w3-center">Considering these statistics, you can see why games constitute one of the leading API categories today. Technically, 
+                    API is an acronym for Application Programming Interface. The term refers to a software interface that allows two applications to communicate with 
+                    each other. A gaming API allows your programs and software applications to interact with one another and share rules, settings, specifications, and
+                    data among others. These APIs interact with libraries, operating systems, applications and more, usually used to share and embedded gaming content. 
+                    When looking at what API’s to choose, the three main things to take in consideration are functionality, efficacy, and pricing. Here are some of 
+                    the top API’s out right; RAWG Video Games Database, Chicken Coop, SteamWeb and many more. We encourage you to look into some of these on here
+                     <a href="https://rapidapi.com/blog/top-video-game-apis/" target="_blank" style="color: aquamarine;">Top 9 API's</a> and see what if they fit the 
+                     game development you are trying to do since they are all different in their own way.</p>
+                                    <br>
+        <h4 class="w3-wide w3-center">Languages</h4>
+        <p class="w3-opacity w3-center">The gaming industry has grown tremendously in the recent past. A recent report released by the Entertainment Software Association (ESA)
+                estimated that 42% of Americans play video games for at least 3 hours every week. Additionally, more than 150 million Americans play online 
+                and offline video games. Another forecast by PwC suggested that by 2019, the revenue generated from video games would reach $93.18 billion USD. 
+                In addition, the global social gaming market would reach $22.52 billion USD. Considering these statistics, you can see why games constitute one 
+                of the leading API categories today. Technically, API is an acronym for Application Programming Interface. The term refers to a software interface 
+                that allows two applications to communicate with each other. A gaming API allows your programs and software applications to interact with one 
+                another and share rules, settings, specifications, and data among others. These APIs interact with libraries, operating systems, applications and 
+                more, usually used to share and embedded gaming content. When looking at what API’s to choose, the three main things to take in consideration are 
+                functionality, efficacy, and pricing. Here are some of the top API’s out right; EVE ESI API, TwitchTV API, Battle.net API, Steam Web API and many. 
+                We encourage you to look into some of these and see what if they fit the game development you are trying to do since they are all different in their 
+                own way.</p>
+    </div>
+  </div>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello!</h1>
-          <p>Interested in becoming a game developer? Explore our web page and find all the necassary steps to make this your future career! </p>
-          <p></p>
-        </div>
-      </div>
 
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div>
-            <h2>Overview</h2>
-            <p>Game developers work on teams to plan, design, and produce video games for computers, mobile devices, or game consoles. Their work involves creating visual content for the game and writing code to implement all the game’s features and functionality. This career requires a background in software development and mathematics and the ability to collaborate well with others to accomplish project goals. While many work full-time hours in game studios or at software companies, opportunities exist for game developers who prefer to work remotely or to self-publish their games online as independent developers.
+
+  <!-- Companies & Studios Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Companies & Studios</h2>
+        <h5>Microsoft (Xbox) vs Sony (PS4)</h5>
+            <p lass="w3-justify">The Xbox One runs two operating systems within a hypervisor; games run within one separate operating system, while apps and the user interface
+                         run within a stripped-down version of Microsoft Windows 10. PlayStation 4 system software is the updatable firmware and operating system of the
+                         PlayStation 4. The operating system is Orbis OS, based on FreeBSD 9.
             </p>
-            </div>
-          <br>
-          <div>
-            <h2>Opportunities</h2>
-          <p>Job Titles</p>
+    <h5>Gaming Engines: Gta 5 Vs. Saints Row </h5>
+        <p><b>Rockstar Games Advanced Engine (RAGE)</b></p>
             <ul>
-              <li> On average 2600</li>
-            </ul>
-          <p>Where are the jobs?</p>
+                <li>Created by video game developer Rockstar Games. Rockstar uses it to power their video games on the Xbox 360, PlayStation 3, Xbox One, and PlayStation 4 consoles. It’s ability to handle large streaming worlds, complex A.I. arrangements, weather effects, fast network code and a multitude of gameplay styles made it a great fit for the development of GTA 5</li>
+            </ul>   
+        <p><b>Havok Physics</b></p>
             <ul>
-              <li>Greater Seattle area</li>
-            </ul>
-             </div>
-          <div>          
-        <h3>Entry Level Jobs That Help With Experience</h3>
-          <p><b>Entry Level Software Engineer</b></p>
-        <ul>
-        <li>Focus on app creation for mobile devices that run on iOS and Android operating systems.  You typically work on programming for both smartphone and tablet environments.</li>
-          </ul>
-          <p><b>UX Designer</b></p>
-        <ul>
-        <li>A UX designer deals with the front end and oversees the entire process of acquiring and integrating a product, aspects of branding, design, usability and function.</li>
-          </ul>
-          <p><b>Junior Environment Artist</b></p> 
-        <ul>
-        <li>Work closely with art directors, environment artists and designers to create, edit, and optimize realistic detailed 3d environments.</li>
-          </ul>
-          </div>
-          <br>
-          <div>
-            <h2>Tools/API's</h2>
-            <p>The gaming industry has grown tremendously in the recent past. A recent report released by the Entertainment Software Association (ESA) estimated that 42% of Americans play video games for at least 3 hours every week. Additionally, more than 150 million Americans play online and offline video games. Another forecast by PwC suggested that by 2019, the revenue generated from video games would reach $93.18 billion USD. In addition, the global social gaming market would reach $22.52 billion USD. Considering these statistics, you can see why games constitute one of the leading API categories today. Technically, API is an acronym for Application Programming Interface. The term refers to a software interface that allows two applications to communicate with each other. A gaming API allows your programs and software applications to interact with one another and share rules, settings, specifications, and data among others. These APIs interact with libraries, operating systems, applications and more, usually used to share and embedded gaming content. When looking at what API’s to choose, the three main things to take in consideration are functionality, efficacy, and pricing. Here are some of the top API’s out right; EVE ESI API, TwitchTV API, Battle.net API, Steam Web API and many. We encourage you to look into some of these and see what if they fit the game development you are trying to do since they are all different in their own way.</p>
-            <p></p>
-          </div>
-          <br>
-          <div>
-            <h2>Languages</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p></p>
-          </div>
-          <br>
-          <div>
-            <h2>Companies & Studios</h2>
-              <h5>Microsoft (Xbox One) vs. Sony (PS4)</h5>
-      <p>The Xbox One runs two operating systems within a hypervisor; games run within one separate operating system, while apps and the user interface run within a stripped-down version of Microsoft Windows 10.</p>
-      <p>PlayStation 4 system software is the updatable firmware and operating system of the PlayStation 4. The operating system is Orbis OS, based on FreeBSD 9.</p>
-    </div>
-    <div>
-   <h5>Gaming Engines: Gta 5 Vs. Saints Row </h5>
-         <p><b>Rockstar Games Advanced Engine (RAGE)</b></p>
-      <ul>
-        <li>Created by video game developer Rockstar Games. Rockstar uses it to power their video games on the Xbox 360, PlayStation 3, Xbox One, and PlayStation 4 consoles. It’s ability to handle large streaming worlds, complex A.I. arrangements, weather effects, fast network code and a multitude of gameplay styles made it a great fit for the development of GTA 5</li>
-       </ul>   
-      <p><b>Havok Physics</b></p>
-      
-        <ul>
-        <li>Rigid body physics engine is the most optimized, stable, and a widely used piece of middleware in the games industry today. Havok Physics has been a core part of production pipelines for almost two decades, and their game development partners continue to push and refine the technology. It was responsible for Saints Row’s vehicle drifting physics and the VTOL aircraft.</li>
-</p>
-            <p></p>
-          </div>
-          <br>
-          <div>
-            <h2>Education</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p></p>
-          </div>
-    </div>
+                <li>Rigid body physics engine is the most optimized, stable, and a widely used piece of middleware in the games industry today. Havok Physics has been a core part of production pipelines for almost two decades, and their game development partners continue to push and refine the technology. It was responsible for Saints Row’s vehicle drifting physics and the VTOL aircraft.</li>
+            </ul> 
+        </p>
+  </div>
+  
+<!-- End Page Content -->
+</div>
 
-        <hr>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-      </div> <!-- /container -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
-    </main>
+<script>
+// Automatic Slideshow - change image every 8 seconds
+var myIndex = 0;
+carousel();
 
-    <footer class="container">
-      <p>&copy; Company 2017-2018</p>
-    </footer>
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);    
+}
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
 </html>
